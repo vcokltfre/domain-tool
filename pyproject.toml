@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "domains"
+version = "1.0.0"
+description = "A personal utility to manage my domains"
+authors = ["vcokltfre <vcokltfre@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/vcokltfre/domain-tool"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.4.0"
+cloudflare = "^2.8.15"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+dom = "domains.cli:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
